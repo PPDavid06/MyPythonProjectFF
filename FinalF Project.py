@@ -99,6 +99,7 @@ def tab1():
         def back1():
                 I2.delete(0, 'end')
                 SB1.delete(0, 'end')
+                PHNUM.delete(0, 'end')
                 L2.destroy()
                 B2.destroy()
                 I2.destroy()
@@ -106,8 +107,12 @@ def tab1():
                 SB1.destroy()
                 LP2.destroy()
                 LPD2.destroy()
+                CB1.destroy()
+                LPD3.destroy()
+                LPD4.destroy()
+                PHNUM.destroy()
                 tab1()
-
+                
         B2 = Button(root, text="back", font=("Times_New_Roman", 25), command=back1)
         B2.pack(side=BOTTOM, padx=10, ipadx=10, ipady=5, anchor="se")
 
